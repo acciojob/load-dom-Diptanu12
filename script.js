@@ -1,2 +1,5 @@
-//your JS code here. If required.
-document.writeln("DOM load success");
+document.addEventListener("DOMContentLoaded", function() {
+    var message = document.createElement("p");
+    message.textContent = "DOM load success";
+    document.body.appendChild(message);
+});
